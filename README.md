@@ -8,14 +8,15 @@ Följande komponenter ska finnas i appen:
  - Server API
  - Externt API
 
-Externt API är valfritt - det står dig fritt att välja vilken typ av
-webapp du vill bygga. Exempel på API kan vara:
+Externt API är valfritt - det står dig fritt att välja vilken typ av app du vill bygga.
+Exempel på API kan vara:
 
  - [complimentr][1]
  - [evilinsult][2]
  - [zenquotes][3]
 
 
+Diagram över hur appen ska fungera:
 
 ```
 +-------+                +---------+             +---------+                      +-----+
@@ -42,13 +43,15 @@ webapp du vill bygga. Exempel på API kan vara:
     |                         |                       |                              |
 ```
 
-Exempel på implementation med [complimentr][1]:
+Exempel på implementation - **Pep talk** - som hämtar data från [complimentr][1]:
 
 ![Pep talk](https://peptalk.herokuapp.com/peptalk.gif)
 
 Lägg upp din app i repo på Github och skicka länken till apps@rebla.se
 
 Lycka till! 🙌
+
+Rebla teamet
 
 [1]:https://complimentr.com/
 [2]:https://evilinsult.com/api/
