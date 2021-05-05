@@ -45,7 +45,7 @@ Diagram över hur appen ska fungera:
 
 Exempel på implementation - **Pep talk** - som hämtar data från [complimentr][1]:
 
-![Pep talk](https://peptalk.herokuapp.com/pep-talk.gif)
+![Pep talk](https://peptalk.herokuapp.com/peptalk.gif)
 
 Lägg upp din app i repo på Github och skicka länken till apps@rebla.se
 
