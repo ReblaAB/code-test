@@ -4,8 +4,8 @@ Uppgiften består i att skapa en webapp som visar en text hämtad från ett API.
 Webappen ska visa en knapp som man klickar på för att generera en text.
 Följande komponenter ska finnas i appen:
 
- - JS klient
- - Server API
+ - JS klient (React, Preact, Vue ...)
+ - Server API (Flask, Django, FastAPI ...)
  - Externt API
 
 Externt API är valfritt - det står dig fritt att välja vilken typ av app du vill bygga.
@@ -19,28 +19,28 @@ Exempel på API kan vara:
 Diagram över hur appen ska fungera:
 
 ```
-+-------+                +---------+             +---------+                      +-----+
-| User  |                | Browser |             | Server  |                      | API |
-+-------+                +---------+             +---------+                      +-----+
-    |                         |                       |                              |
-    | Clicks button           |                       |                              |
-    |------------------------>|                       |                              |
-    |                         |                       |                              |
-    |                         | Makes JS request      |                              |
-    |                         |---------------------->|                              |
-    |                         |                       |                              |
-    |                         |                       | Makes server side request    |
-    |                         |                       |----------------------------->|
-    |                         |                       |                              |
-    |                         |                       |             Returns response |
-    |                         |                       |<-----------------------------|
-    |                         |                       |                              |
-    |                         |      Returns response |                              |
-    |                         |<----------------------|                              |
-    |                         |                       |                              |
-    |      Displays some text |                       |                              |
-    |<------------------------|                       |                              |
-    |                         |                       |                              |
++-------+          +-----------+     +------------+    +--------------+
+| User  |          | JS client |     | Server API |    | External API |
++-------+          +-----------+     +------------+    +--------------+
+    |                    |                  |                  |
+    | Clicks button      |                  |                  |
+    |------------------->|                  |                  |
+    |                    |                  |                  |
+    |                    | Makes request    |                  |
+    |                    |----------------->|                  |
+    |                    |                  |                  |
+    |                    |                  | Makes request    |
+    |                    |                  |----------------->|
+    |                    |                  |                  |
+    |                    |                  | Returns response |
+    |                    |                  |<-----------------|
+    |                    |                  |                  |
+    |                    | Returns response |                  |
+    |                    |<-----------------|                  |
+    |                    |                  |                  |
+    | Displays some text |                  |                  |
+    |<-------------------|                  |                  |
+    |                    |                  |                  |
 ```
 
 Exempel på implementation - **Pep talk** - som hämtar data från [complimentr][1]:
